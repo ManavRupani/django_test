@@ -1,0 +1,46 @@
+[
+  {
+    "title": "The Future of Serverless Computing",
+    "author": "Manav",
+    "publication_date": "2024-01-29",
+    "content": "Serverless computing offers scalability and cost-efficiency, revolutionizing the way applications are developed and deployed...",
+    "tags": ["Serverless", "Computing", "Cloud"],
+    "comments": [
+      {
+        "user": "CloudEnthusiast",
+        "comment": "Exciting times ahead for serverless computing!",
+        "timestamp": "2024-01-30T09:45:00Z"
+      }
+    ]
+  },
+  {
+    "title": "The Power of Go Programming",
+    "author": "Manav",
+    "publication_date": "2024-02-23",
+    "content": "Go, also known as Golang, is a statically typed, compiled programming language designed for simplicity and efficiency...",
+    "tags": ["Go", "Programming", "Development"],
+    "comments": []
+  },
+  {
+    "title": "Optimizing Database Performance with Hibernate",
+    "author": "Manav",
+    "publication_date": "2024-02-01",
+    "content": "Hibernate is a popular ORM framework for Java applications, simplifying database interactions and improving performance...",
+    "tags": ["Hibernate", "Java", "Database"],
+    "comments": []
+  },
+  {
+    "title": "Deploying Microservices with Docker and Kubernetes",
+    "author": "Manav",
+    "publication_date": "2024-02-12",
+    "content": "Microservices architecture offers flexibility and scalability, but deploying and managing microservices can be complex...",
+    "tags": ["Microservices", "Docker", "Kubernetes"],
+    "comments": [
+      {
+        "user": "DevOpsExpert",
+        "comment": "Great overview of microservices deployment!",
+        "timestamp": "2024-02-13T08:45:00Z"
+      }
+    ]
+  }
+]

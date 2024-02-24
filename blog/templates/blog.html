@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+{% for post in data %}
+<div class="post">
+    <div class="date">
+      {{ post.publication_date }}
+    </div>
+    <h2 class="title">
+      {{ post.title }}
+    </h2>
+    <p class="quote">
+      {{ post.content }}
+    </p>
+    <p class="body">
+      Tags: {{ post.tags|join:", " }}
+    </p>
+    <hr>
+    <h3>Comments:</h3>
+    {% for comment in post.comments %}
+        <p>{{ comment.user }} said "{{ comment.comment }}" on {{ comment.timestamp }}</p>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}
