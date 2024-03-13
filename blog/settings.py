@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ue%+y+f3e7ex)*2_=_szr*cbs8z%fg9y%^oxp^%7atfj-e2t1n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['get-my-ip.ddns.softether-network.net','localhost','192.168.2.59','']
+ALLOWED_HOSTS = ['get-my-ip.ddns.softether-network.net','localhost','192.168.2.59','.vercel-app']
 
 
 # Application definition
