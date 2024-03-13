@@ -1,28 +1,24 @@
 {% extends 'base.html' %}
 {% block title %}
-{{title}}
+Blog lists
 {% endblock %}
 
 {% block content %}
 {% for post in data %}
-<div class="post">
-    <div class="date">
-      {{ post.publication_date }}
+<div class="card">
+    <div class="card-body">
+        <a href="{% url 'blog_ind' id_json=post.id %}"><h5 class="card-title">{{ post.title }}</h5></a>
+        <h6 class="card-subtitle mb-2 text-muted">{{ post.publication_date }}</h6>
+        <p class="card-text">{{ post.content }}</p>
+        <p class="card-text">Tags: {{ post.tags|join:", " }}</p>
     </div>
-    <h2 class="title">
-      {{ post.title }}
-    </h2>
-    <p class="quote">
-      {{ post.content }}
-    </p>
-    <p class="body">
-      Tags: {{ post.tags|join:", " }}
-    </p>
-    <hr>
-    <h3>Comments:</h3>
-    {% for comment in post.comments %}
-        <p>{{ comment.user }} said "{{ comment.comment }}" on {{ comment.timestamp }}</p>
-    {% endfor %}
+    <div class="card-footer">
+        <h6>Comments:</h6>
+        {% for comment in post.comments %}
+        <p class="card-text" style="font-size: small; margin:auto 3rem 0rem;">{{ comment.user }} said "{{ comment.comment }}" on {{ comment.timestamp }}</p>
+        {% endfor %}
+    </div>
 </div>
+<br>
 {% endfor %}
 {% endblock %}

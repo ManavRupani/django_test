@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item.title }}</title>
+</head>
+<body>
+    <h1>{{ item.title }}</h1>
+    <p>Author: {{ item.author }}</p>
+    <p>Publication Date: {{ item.publication_date }}</p>
+    <p>{{ item.content }}</p>
+
+    <h2>Tags:</h2>
+    <ul>
+        {% for tag in item.tags %}
+            <li>{{ tag }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Comments:</h2>
+    <ul>
+        {% for comment in item.comments %}
+            <li>
+                <strong>{{ comment.user }}</strong> said:
+                <p>{{ comment.comment }}</p>
+                <p>Timestamp: {{ comment.timestamp }}</p>
+            </li>
+        {% empty %}
+            <li>No comments yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

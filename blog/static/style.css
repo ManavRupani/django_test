@@ -1,37 +1,86 @@
-body {
-    max-width: 400px;
-    width: 50%;
-    border: 10px solid #bdc3c7;
-    margin: auto;
-    margin-top: 10px;
-    padding: 20px;
-  }
-  
-  * {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  
-  .quote {
-    border-left: 2px solid #bdc3c7;
-    padding-left: 5px;
-  }
-  
-  .title {
-    padding-bottom: 7px;
-    padding-top: 7px;
-  }
-  
-  .date {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #00356b;
-    font-weight: bold;
-  }
-  
-  .post {
-    margin-bottom: 20px;
-  }
-  
-  hr {
-  border-top: 1px solid #bdc3c7}
-  
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 1px solid #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  border-bottom-color: #0056b3;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  border-left: 0.5rem solid #ccc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+code {
+  font-size: 1.1rem;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.tags {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tags a {
+  margin-right: 0.5rem;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.tags a:hover {
+  background-color: #e5e5e5;
+}
+
+.comments {
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.comments a {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.comments a:hover {
+  background-color: #e5e5e5;
+}

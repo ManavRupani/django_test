@@ -7,5 +7,6 @@ urlpatterns = [
     path('',views.home),
     path('blog',views.blog),
     path('me',views.me),
+    path('blog/<int:id_json>/',views.blog_ind,name='blog_ind')
 
 ]

@@ -37,3 +37,9 @@ def blog(request):
 def me(request):
     context = {'data': load_data()}
     return render(request,'me.html',context)
+
+def blog_ind(request,id_json):
+    data = load_data()
+    item = data[int(id_json)]
+    context = {'item':item}
+    return render(request,'blog_detail.html',context)
