@@ -21,9 +21,12 @@
 
 from django.shortcuts import render
 import json 
+import os
 
 def load_data():
-    with open('blog\datajson.json') as f:
+    script_dir = os.path.dirname(__file__)
+    file_path = os.path.join(script_dir, 'datajson.json')
+    with open(file_path) as f:
         return json.load(f)
 
 def home(request):
