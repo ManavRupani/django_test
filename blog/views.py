@@ -23,7 +23,7 @@ from django.shortcuts import render
 import json 
 
 def load_data():
-    with open(r'C:\Users\manav\Desktop\python\blog\data_json.json') as f:
+    with open('blog\datajson.json') as f:
         return json.load(f)
 
 def home(request):
